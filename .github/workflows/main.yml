@@ -1,0 +1,19 @@
+name: Daily Reminder
+
+on:
+  schedule:
+    - cron: "* 7 * * 1-5"
+
+jobs:
+  notifification:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+
+    steps:
+      - uses: sarisia/actions-status-discord@v1
+        if: always()
+        with:
+          webhook: ${{ secrets.DISCORD_URL }}
+          content: "Remember to do daily report on excel sheet"
