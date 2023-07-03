@@ -3,6 +3,7 @@ name: Daily Reminder
 on:
   schedule:
     - cron: "*/15 * * * 1-5"
+  workflow_dispatch:
 
 jobs:
   notifification:
