@@ -17,4 +17,5 @@ jobs:
         if: always()
         with:
           webhook: ${{ secrets.DISCORD_URL }}
-          content: "Remember to do daily report on excel sheet https://docs.google.com/spreadsheets/d/1gto0B022cv4uLTh0nmuQZcGIwVrZsAVwNE7jBZmAS_c/edit#gid=752255795"
+          title: "Report đê a/c/e"
+          content: "https://forms.gle/Dp8cgNKmzJetyPC66"
