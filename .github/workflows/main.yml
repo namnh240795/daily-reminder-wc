@@ -18,4 +18,4 @@ jobs:
         with:
           webhook: ${{ secrets.DISCORD_URL }}
           title: "Report đê a/c/e"
-          content: "https://forms.gle/Dp8cgNKmzJetyPC66"
+          description: "https://forms.gle/Dp8cgNKmzJetyPC66"
